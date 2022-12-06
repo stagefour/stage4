@@ -1,0 +1,18 @@
+
+ <div id="lista">
+ <ul class="list-unstyled">
+  <div class="container" id="rzeczy">
+   <p id="blad"> {{ strach.title }} <br>
+    <img src="pics/k.png" alt="kosz"></p>
+ <li ng-repeat="thing in strach.mojaLista.list">
+          <button class="btn btn-warning btn-xs" 
+          ng-click="strach.mojaLista.gotit($index);">
+          <==></button>
+          {{thing.quantity + " " + thing.name}}
+</li>
+	</div>
+</ul>
+	<button id="guziczek"
+	ng-click="strach.mojaLista.wyczysc();">
+	wyczyść listę</button>
+</div>

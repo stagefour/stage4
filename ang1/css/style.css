@@ -1,0 +1,100 @@
+body
+	{
+		font-family: "Lucida Sans Unicode", 
+		"Lucida Grande", sans-serif;
+		background: url("../pics/tapeta.jpg");
+		background-repeat: repeat;
+
+	}
+
+
+#pytanie
+	{
+		width: 50%;
+		margin: 10 auto 10;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border: 1px solid black;
+		border-radius: 10px;
+		background-color: #3300cc;
+		box-shadow: 0 0 20px #3f0c1f;
+		color: white;
+		font-weight: bold;
+		font-size: 1.3em;
+	}
+
+#cozjemy
+	{
+		font-size: 3.2em;
+		font-weight: bold;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #660033;
+	}
+
+
+#przycisk
+	{ 
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+
+.btn
+	{
+		margin-top: 15px;
+	}
+
+#stopka
+	{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+
+#neutral
+	{
+		width: 50%;
+		height: 60px;
+		font-size: 2em;
+		padding-top: 6px;
+		color: white;
+		font-weight: bold;
+		margin: 10 auto 10;
+		border: 2px solid black;
+		border-radius: 10px;
+		background-color: #3300cc;
+		box-shadow: 0 0 20px #3f0c1f;
+		
+	}
+
+#notfat
+	{
+		width: 50%;
+		height: 60px;
+		font-size: 2em;
+		margin: 10 auto 10;
+		padding-top: 6px;
+		padding-bottom: 3px;
+		border: 2px solid green;
+		border-radius: 10px;
+		background-color: #ccccff;
+		box-shadow: 0 0 20px #3f0c1f;
+		color: green;
+	}
+
+#toomuch
+	{
+		width: 50%;
+		height: 60px;
+		font-size: 2em;
+		margin: 10 auto 10;
+		padding-top: 6px;
+		padding-bottom: 3px;
+		border: 2px solid red;
+		border-radius: 10px;
+		background-color: #ccccff;
+		box-shadow: 0 0 20px #3f0c1f;
+		color: red;
+	}
+

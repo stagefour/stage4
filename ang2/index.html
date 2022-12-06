@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ShoppingListCheckoff">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pawel Banasiewicz</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   </head>
+
+
+   <div class="container">
+
+   <div id="header" class="container text-center">SHOPPING LIST</div>
+
+
+   <div class="container">
+    <div ng-controller="ToBuyController as buy" id="star" class="col-sm-6 col-xs-12">
+      <p>to buy:</p>
+     
+        <ul class="list-unstyled" id="lista">
+        <div class="container" id="rzeczy">
+         <p ng-show="buy.list.length===0">You have bought everything</p>
+          <li ng-repeat="thing in buy.list">
+          <button class="btn btn-warning btn-xs" ng-click="buy.gotit($index);">==></button>
+          buy {{thing.quantity + " " + thing.name}}
+          </li>
+        </div>
+        </ul>
+    </div>
+
+    <div ng-controller="AlreadyBoughtController as bought" id="star" class="col-sm-6 col-xs-12">
+      <p>bought:</p>
+     
+        <ul class="list-unstyled" id="lista">
+        <div class="container" id="rzeczy">
+         <p ng-show="bought.list.length===0">Nothing has been bought</p>
+          <li ng-repeat="thing in bought.list">
+          bought {{thing.quantity + " " + thing.name}}
+          </li>
+        </div>
+        </ul>
+    </div>
+    </div>
+ 
+
+		<div id="stopka" class="container text-center">
+    	&copy;  2017
+  		</div>
+
+    </div>
+
+  		<script src="js/jquery-3.1.1.min.js"></script>
+  		<script src="js/bootstrap.min.js"></script>
+  		<script src="js/angular.min.js"></script>
+  		<script src="js/skrypt.js"></script>
+
+  	</body>
+</html>

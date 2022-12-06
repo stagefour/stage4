@@ -1,0 +1,192 @@
+
+body
+	{
+		font-family: "Lucida Sans Unicode", 
+		"Lucida Grande", sans-serif;
+		background: url("../pics/tapeta.jpg");
+		background-repeat: repeat;
+
+	}
+
+
+.black
+	{
+		background-color: black;
+		color: white;
+		padding: 4px;
+	}
+
+.marginesy
+	{
+
+		padding: 4px;
+
+	}
+
+.green
+	{
+		color: white;
+		background-color: green;
+		border: 2px solid black;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+
+.blue
+	{
+		color: white;
+		background-color: blue;
+		border: 2px solid black;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+
+.red
+	{
+		color: white;
+		background-color: red;
+		border: 2px solid black;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+
+.yellow
+	{
+		color: black;
+		background-color: yellow;
+		border: 2px solid black;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+
+.centruj
+	{
+		text-align: center;
+	}
+
+.jumbotron .zaba
+	{
+		margin: 0 auto 15px;
+		width: 100%;
+		border-radius: 10px;
+	}
+
+.container .jumbotron
+	{
+		position: relative;
+		padding: 0;
+		width: 100%;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #3f0c1f;
+	} 
+
+.jumbotron .tytulik
+	{	position: absolute;
+		width: 250px;
+		padding: 2px;
+		margin-bottom: 1px;
+		margin-right: 1px;
+		border-radius: 10px;
+		bottom: 0;
+		right: 0;
+		background-color: grey;
+		color: black;
+		opacity: 0.7;
+		}
+
+a {
+		text-decoration: none;
+	}
+
+a:hover {
+			background-color: blue;
+			color: yellow;
+			text-decoration: none;
+		}
+
+#menu-tile1, #menu-tile2, #menu-tile3
+	{
+		height: 250px;
+		width: 300px;
+		margin: 0 auto 15px;
+		position: relative;
+		border: 2px solid black;
+		overflow: hidden;
+	}
+
+#menu-tile1:hover, #menu-tile2:hover, #menu-tile3:hover
+	{
+		box-shadow: 2px 6px 6px 2px #3f0c1f;
+	}
+
+#menu-tile1
+	{
+		background: url("../pics/car.jpg") no-repeat;
+		background-position: center;
+	}
+
+#menu-tile2
+	{
+		background-image: url("../pics/food.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+
+
+#menu-tile1 span, #menu-tile2 span, #menu-tile3 span
+	{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		background-color: #000;
+		color: #fff;
+		opacity: .7;
+	}
+
+@media (max-width: 420px)
+	{
+		#menu-tile1, #menu-tile2, #menu-tile3
+		{
+			width: 250px;
+			margin: 0 auto 15px;
+		}
+	}
+
+#stopka
+	{
+		padding-top:25px;
+		padding-left: 15px;
+	}
+
+#adres > span, #godziny > span
+	{
+		font-size: 1.3em;
+	}
+
+#adres > p, #godziny > p
+	{
+		padding-top: 0px;
+		margin: 0px;
+	}
+
+#adres, #godziny, #cytat
+	{
+		padding-top: 15px;
+		font-weight: bold;
+	}
+
+
+#autor
+	{
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+hr
+	{ 
+		width: 75%;
+		border-top: 3px solid black; }

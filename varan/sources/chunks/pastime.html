@@ -1,0 +1,123 @@
+<div class="container" id="chunk-content">
+
+
+        <div class="col-xs-10 col-xs-offset-1 kontener3">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 tekstpad kontener2">
+                <div class="career-choose" ng-show="k.interestsText">
+        
+                <div class="col-md-4 centruj kontener4">
+                    <button class="btn btn-xs myButton" ng-click="k.flipPage(1);"
+                    ng-audio="sources/sounds/click.wav" volume="0.5">
+                    games</button>
+                </div>
+        
+                <div class="col-md-4 centruj kontener4">
+                    <button class="btn btn-xs myButton" ng-click="k.flipPage(2);"
+                    ng-audio="sources/sounds/click.wav" volume="0.5">
+                    guitar</button>
+                </div>
+        
+                <div class="col-md-4 centruj kontener4">
+                    <button class="btn btn-xs myButton" ng-click="k.flipPage(3);"
+                    ng-audio="sources/sounds/click.wav" volume="0.5">
+                    others</button>
+                </div>
+    
+        
+                </div>
+                </div>
+            </div>
+
+            <div class="kontener4">
+                    <div class="col-xs-10 col-xs-offset-1 tekstpad kontener2">
+                    <div class="mehaalomahn black-mamba" ng-show="k.games">
+                    <p class="centruj-title">GAMES</p>
+                    <div class="penelope kontener4" ng-show="k.gamesIntro">
+                    <p class="noMargins">I have been playing games since mid-80s and the 8-bit computers, which
+                        had an undeniable charm in their simplicity.<br>
+                        Because for me the most important thing in games is the story and the opportunity to participate in the adventure,
+                        I mostly play RPGs - the more complicated the better.
+                        <br>
+                        And I also like shooters, but I can't say I'm the best at it in the world :)<br>
+                        I appreciate when the game makes you think and evokes emotions and feelings,
+                        because the world of computer games is an incredible place of fun, entertainment,
+                        and adventures and I really can't wait what the future brings.<br>
+                        Please click the button below to see the list of the games that really 
+                        did inspire me somehow and please find me on Steam - my nickname is kukikoko.<br>
+                    </p>
+
+                            <button class="btn btn-xs myButton1" ng-click="k.ShowTheList();"
+                            ng-audio="sources/sounds/click.wav" volume="0.5">
+                            the list</button> 
+
+                    </div>
+ 
+
+                    <div class="penelope kontener4" ng-show="k.theList">
+                    <ul>
+                        <li ng-repeat="thing in k.gamelist"> {{thing}} </li>
+                    </ul>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        
+            <div class="kontener4">
+                    <div class="col-xs-10 col-xs-offset-1 tekstpad kontener2">
+                    <div class="mehaalomahn black-mamba" ng-show="k.guitar">
+                    <p class="centruj-title">GUITAR</p>
+
+                    <div class="penelope kontener4" ng-show="k.guitarIntro">
+                                <div class="col-md-4 col-sm-5 col-xs-12 fotopad">
+                                                <img class="img-rounded img-responsive" src="sources/pics/guitar.jpg" alt="guitar">
+                                </div>
+
+                                
+                        <p class="noMargins">I play the guitar, bass, drums and try to play keyboard.<br>
+                                I played in several bands, I played dozens of concerts, mainly in small Warsaw clubs.<br>
+                                For me it's a great fun, and when I compose and create something from scratch it gives me an amazing sense of freedom.<br>
+                                It's a vital part of my life.
+                                I work on Reaper DAW, play my custom made guitar (on the picture).
+                                For my inspirations please click the button. Yo!!!
+                        </p>
+
+
+                            <button class="btn btn-xs myButton1" ng-click="k.ShowInspirations();"
+                            ng-audio="sources/sounds/click.wav" volume="0.5">
+                            inspirations</button> 
+
+                    </div>
+
+                    <div class="penelope kontener4" ng-show="k.guitarInspirations">
+                        <p class="noMargins">My inspirations:</p>
+                        <ul>
+                        <li ng-repeat="thing in k.guitarDescription"> {{thing}} </li>
+                        </ul>
+                    </div>
+
+                    </div>
+                    </div>
+            </div>
+
+            <div class="kontener4">
+                    <div class="col-xs-10 col-xs-offset-1 tekstpad kontener2">
+                    <div class="mehaalomahn black-mamba" ng-show="k.travel">
+                    <p class="centruj-title">OTHERS</p>
+
+                    <div class="penelope kontener4">
+                        <p class="noMargins">I enjoy doing other things. They don't take as much time as games and music, but without them I certainly wouldn't feel good.</p>
+                        <ul>
+                                        <li ng-repeat="thing in k.otherActivities"> {{thing}} </li>
+                        </ul>
+
+                    </div>
+
+
+
+
+
+                    </div>
+                    </div>
+            </div>    
+
+</div>

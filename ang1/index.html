@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pawel Banasiewicz</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body ng-app="LunchCheck">
+
+
+   		<div class="container" ng-controller="LunchCheckController">
+   			<p id="cozjemy" class="text-center">DON'T YOU EAT TO MUCH?</p>
+   				<div ng-controller="LunchCheckController" id="pytanie" class="container text-center">
+   					WHAT ARE YOU GOING TO EAT TODAY?</div>
+   				<div id="przycisk" class="container text-center">
+   					<input type="text" ng-model="MenuForToday"><br>
+   					<button class="btn btn-info" ng-click="krzyknij();">
+					CHECK IT OUT!
+					</button><br>
+				</div>
+			<div id="{{styl}}" class="text-center container-fluid">{{odpowiedz}}</div>
+		</div>
+
+
+		<div id="stopka" class="container text-center">
+    	&copy; ///// P ///// 2017
+  		</div>
+
+  		<script src="js/jquery-3.1.1.min.js"></script>
+  		<script src="js/bootstrap.min.js"></script>
+  		<script src="js/angular.min.js"></script>
+  		<script src="js/skrypt.js"></script>
+  	</body>
+</html>

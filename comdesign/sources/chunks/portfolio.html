@@ -1,0 +1,88 @@
+
+
+<div ng-show="k.karuzelizowal" class="container text-center nutka" id="chunk-content">
+
+<div class="container">
+<p class="slowo-panskiectc shadowyHood">Zachęcam do obejrzenia kilku moich prac. Pamiętaj, że 
+nic nas nie ogranicza i to nie są sugestie!</p>
+</div>
+
+<div class="container-fluid karuzela">
+
+
+<div class="row">
+  <div class="col-md-7 col-sm-7 col-xs-12">
+  <div class="portfolio shadowyHood">
+  <div>kliknij by zobaczyć szczegóły</div>
+    <div uib-carousel active="active" interval="k.myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in k.photos track by slide.id" index="$index">
+      	<a ng-click="k.modal($index)"
+  		  ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.8">
+        <img ng-src="{{slide.image}}" class="img-responsive"  style="margin:0 auto;">
+        <div class="carousel-caption">
+          <span class="pozyszyn">Projekt {{slide.id}}</span>
+          <p class="portslide">{{slide.text}}</p>
+        </div>
+        </a>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div class="col-md-5 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-12">
+	<div class="portfolio shadowyHood">
+Wsłuchuję się w potrzeby, kreuję indywidualne rozwiązania. Korzystając z posiadanej wiedzy, bazując na kreatywności i bogatej w różne doświadczenia realizacyjne praktyce tworzę wyjątkowe wnętrza. Ich unikalny charakter wynika z pełnej personalizacji. Każdą aranżację opieram na indywidualnych ustaleniach z Inwestorem. Projektowanie wnętrz jest procesem, w którym mogę zaproponować znacznie więcej niż tylko kreację funkcjonalnej i estetycznej przestrzeni. Staram się nadawać tworzonym przestrzeniom unikalny klimat, kreować intymną przestrzeń, miejsce dla Ciebie. 
+I dla kotów, rzecz jasna...
+	</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div ng-show="k.diabolizowal" class="container-fluid text-center nutka" id="chunk-content">
+
+	<div class="row">
+		<div class="col-lg-5 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-10 col-xs-11 fotopad">
+		<img ng-src="{{k.photos[k.whichProject].image}}" class="img-rounded img-responsive shadowyHood" alt="oferta">
+		<p class="pjkt">
+			Projekt {{ k.photos[k.whichProject].id }}.<br>
+			{{ k.photos[k.whichProject].text }}
+		</p>
+		</div>
+
+		<div class="col-lg-4 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-11 col-xs-11 tekstpad">
+		<div class="slowo-panskie shadowyHood" id="skryba">
+		{{ k.photos[k.whichProject].description }}
+		</div>
+		</div>
+	</div>
+
+<p class="pozyszyn2">
+	<button class="portfoliobutton" ng-click="k.modal(99);"
+		 ng-audio-hover="sources/media/sounds/modalhover.wav" volume-hover="0.7" 
+  		 ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.8">
+	<img src="sources/media/icons/previous.png" alt="sutkiMarioli">
+	</button> powrót do projektów..
+</p>
+
+
+
+</div>
+
+
+
+<button id="ikonka1" ng-click="k.nuta(1);">
+
+<img ng-src="{{k.soundIcon}}" alt="muzyka/bezmuzy">
+</button>
+
+<button id="ikonka2" ng-click="k.nuta(2);">
+<img ng-src="{{k.soundShutUp}}" alt="w swiecie ciszy">
+</button>
+
+
+
+

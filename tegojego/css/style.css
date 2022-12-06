@@ -1,0 +1,228 @@
+body
+	{
+		font-family: 'Varela Round', sans-serif;
+		animation: ruch 300s linear infinite alternate;
+		background-image: url("../pics/dots2.png"), url("../pics/dots.png");
+	}
+
+@keyframes ruch
+      {
+        0% {background-position:0 0, 0 0;}
+        100% {background-position:10000px 0, 7500px 0;}
+      }
+
+input
+	{
+		text-align: center;
+		color: black;
+	}
+
+#header
+	{ 
+		background-color: #3366ff;
+		opacity: 0.8;
+		border: 1px solid black;
+		border-radius: 20px;
+		box-shadow: 2px 2px 20px #003399;
+		margin: 20px auto 22px;
+		padding-top: 30px;
+		padding-bottom: 22px;
+		color: white;
+		font-weight: bold;
+		font-size: 1.4em;
+	}
+
+
+#elementy
+		{
+			position: relative;
+			width: 80%;
+			height: auto;
+			padding-bottom: 15px;
+			padding-top: 17px;
+			margin-bottom: 15px;
+			border: 2px solid black;
+			border-radius: 15px;
+			background-color: #33ccff;
+			box-shadow: 2px 2px 20px #003399;
+			opacity: 0.8;
+			font-size: 0.7em;
+			color: black;
+		}
+
+.dead
+	{
+		position: absolute;
+		left: -25px;
+		top: -25px;
+	}
+
+.logout
+	{
+		position: absolute;
+		left: 15px;
+		bottom: 15px;
+		color: black;
+	}
+
+.licznik
+	{
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		width: 75px;
+		font-size: 0.9em;
+		display: none;
+		color: white;
+		background-color: #000066;
+		border: 1px solid black;
+		border-radius: 10px;
+		box-shadow: 2px 2px 20px #003399;
+		opacity: 0.5;
+	}
+
+#spis
+		{
+			background-color: #3399ff;
+			opacity: 0.9;
+			width: 75%;
+			margin: 5px auto 15px;
+			padding-left: 15px;
+			padding-top: 30px;
+			border: 1px solid black;
+			border-radius: 10px;
+			box-shadow: 2px 2px 20px #003399;
+			font-size: 0.9em;
+		}
+
+
+#ikonka
+		{
+			margin: 10px auto 10px;
+			font-size: 14px;
+		}
+
+#ikonka1
+		{
+
+			margin: 20px auto 20px;
+			font-size: 14px;
+		}
+
+#stopka
+	{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+
+#guzik
+	{
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+
+
+#inputs
+	{
+		margin-top: 5px;
+		margin-bottom: 1px;
+	}
+
+.zamowienie
+	{
+		width: 85%;
+		margin: 3px auto 5px;
+		color: white;
+		font-size: 1.2em;
+		display: none;
+	}
+
+.finalizacja
+	{
+		display: none;
+	}
+
+#kupione
+	{
+
+		width: 90%;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		padding: 15px;
+		font-size: 0.9em;
+		color: black;
+		background-color: #ccff66;
+		opacity: 0.9;
+		border: 1px solid black;
+		border-radius: 10px;
+		box-shadow: 2px 2px 20px #003399;
+	}
+
+.blad
+	{
+		width: 87%;
+		margin: 1px auto 5px;
+		color: red;
+		font-size: 1.4em;
+		font-weight: bold;
+		padding: 5px;
+		display: none;
+	}
+
+.kupilem
+	{
+		display: none;
+	}
+
+#linki
+	{
+		
+		font-size: 14px;
+		color: black;
+		font-weight: bold;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		padding: 5px;
+	}
+
+.ery
+	{
+		padding-left : 10px;
+	}
+
+.tribute
+	{
+		width: 75%;
+		margin: 10px auto 10px;
+	}
+
+
+
+@media (max-width: 680px)
+{
+
+	input
+	{
+		width: 75%;
+	}
+
+	#spis
+	{
+		width: 95%;
+		font-size: 0.7em;
+	}
+
+	#kupione
+	{
+		font-size: 0.9em;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.blad
+	{
+		font-size: 0.9em;
+	}
+}

@@ -1,0 +1,52 @@
+body
+	{ 
+	background-color: black;
+	}
+
+#halo
+	{
+		background-color: white;
+		color: black;
+	}
+
+#halo>p
+	{
+		background-color: magenta;
+	}
+
+.btn
+	{ 
+		margin-bottom: 2px;
+	}
+
+#name
+	{
+		background-color: black;
+		color: white;
+		padding: 2px;
+	}
+
+#halo>#mega
+	{
+		background-color: yellow;
+		color: green;
+		padding: 4px;
+		border: 1px solid black;
+		height: 60px;
+		width:	50%;
+		margin: 0 auto 15px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #3f0c1f
+	}
+
+#imie
+	{	background-color: maroon;
+		color: white;
+		font-size: 3em;
+		text-shadow: 2px 2px #3f0c1f;
+		height: 60px;
+		width: 15%;
+		margin: 0 auto 15px;
+		border-radius: 13px;
+		box-shadow: 2px 2px 5px white;
+	}

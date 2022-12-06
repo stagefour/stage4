@@ -1,0 +1,169 @@
+
+
+
+
+<div class="container" id="chunk-content">
+
+<div class="cointainer naszolapie tekstpad" ng-show="k.hello">
+
+<img class="img-responsive img-rounded shadowyHood" src="sources/media/pics/concept.jpg" alt="dragon">
+
+<div class="quickshow" ng-show="k.primitivity">
+
+<div class="introtext quickshow" ng-show="k.powitanie">
+<div class="homepad">
+<p>Dzień dobry...</p>
+Czy jesteś rozwielitką?...<br>
+<button class="btn btn-xs" ng-click="k.flipPage(1);"
+ ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.6"
+  ng-audio-hover="sources/media/sounds/modalhover.wav" volume-hover="0.7">
+..tak..</button>
+<button class="btn btn-xs" ng-click="k.flipPage(2);"
+ ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.6"
+  ng-audio-hover="sources/media/sounds/modalhover.wav" volume-hover="0.7">
+..nie..</button>
+</div>
+</div>
+
+<div class="introtext quickshow" ng-show="k.firsttime">
+<div class="homepad">
+<p>Czarodziej.</p>
+Lichodziej,<br>Grzybobród.<br>
+Szacunek dla kotów.<br>
+Wszystkie uwagi na temat strony są dla mnie w ogóle<br>
+bez znaczenia.<br>
+<button class="btn btn-xs" ng-click="k.flipPage(3);"
+ ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.6"
+  ng-audio-hover="sources/media/sounds/modalhover.wav" volume-hover="0.7">
+kroczę rozwielicią drogą</button>
+</div>
+</div>
+
+<div class="introtext quickshow" ng-show="k.showControls">
+<div class="homepad">
+<p>INSTRUKCJE</p>
+<p>Nie tykaj</p>
+<p>tych ikon:<br>
+<img src="sources/media/icons/big-pause-button.png" alt="pause"> lub <img src="sources/media/icons/big-play-button.png" alt="play"><br>
+nie dotykać<br>pod żadnym pozorem!!!<br></p>
+<p>nie ruszać!<br>
+<img src="sources/media/icons/big-speaker.png" alt="sound"> lub <img src="sources/media/icons/big-mute.png" alt="mute"><br>
+nigdy nie tknąć, nawet nie myśl<br>
+o tym!!!<p>
+<button class="btn btn-xs" ng-click="k.flipPage(4);"
+ ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.6"
+  ng-audio-hover="sources/media/sounds/modalhover.wav" volume-hover="0.7">
+pokornie spuszczam łeb</button>
+</div>
+</div>
+
+<div class="introtext quickshow" ng-show="k.showVarans">
+<div class="homepad">
+Ten waran z prawego dolnego rogu <img id="snejk" src="sources/media/icons/varan.png" alt="jaszczur"><br>
+to król zwierząt.<br>
+Nie tykać!!!<br>Nie ruszać!!!<br>
+Przenosi w czeluść,<br>
+Zmienia bieg historii.<br>
+<br>
+Na górze strony jest nawigacja,<br>
+Nie dotykać!!!<br>
+Nie bawić się!!!<br>
+<br>
+Nie ingerować, nie wolno!<br>
+<button class="btn btn-xs" ng-click="k.flipPage(5);"
+ ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.6"
+  ng-audio-hover="sources/media/sounds/modalhover.wav" volume-hover="0.7">
+Zamykam się w sobie i kwilę</button>
+</div>
+</div>
+
+
+<div class="introtext quickshow" ng-show="k.showWishes">
+<div class="homepad">
+<p>Mam nadzieję, że zrozumiałeś!</p>
+Rozwielitko<br>
+</div>
+</div>
+
+
+</div>
+
+<div class="quickshow" ng-hide="k.primitivity">
+<div class="introtext quickshow">
+<div class="homepad">
+<p>Widzę, że poznajesz moją stronę</p>
+Było powiedziane - NIE RUSZAĆ???<br>
+.... kiknij na kostki to zagramy w pokera ....<br>
+</div>
+</div>
+</div>
+
+
+<div class="fpokjerka" ng-hide="k.primitivity">
+<div class="kontener3">
+<a class="offerbutton" ng-click="k.goPlayPoker(0);"
+ ng-audio="sources/media/sounds/dice.wav" volume="0.9" 
+ ng-audio-hover="sources/media/sounds/button-21.mp3" volume-hover="0.2">
+<img class="img-responsive" src="sources/media/pics/deckocards.png" alt="karciochy">
+</a>
+</div>
+<span>zagramy?</span>
+</div>
+
+
+</div>
+
+<div class="col-md-offset-1 col-md-6 askmabadapoker" ng-hide="k.innocentGames">
+
+	<div class="container kontener3" ng-hide="k.valid">
+		<p>Kości <span class="kontener3" ng-hide="k.enterYourName">.......</span></p>
+		<p class="kontener3" ng-hide="k.enterYourName">Życzę Ci powodzenia...!</p>
+		<p ng-show="k.enterYourName">
+		Jeśli wygram... to kaplica <br>
+		i śnieżyce.<br>
+		Aaaa Aaaaaa!<br>
+
+		<br>
+		Jak masz na imię?...</p><br>
+		<input class="inserszyn" type="text" ng-model="k.thyName" ng-show="k.enterYourName"><br>
+		<button class="btn btn-primary" ng-click="k.checkName();"  ng-show="k.enterYourName"
+		 ng-audio="sources/media/sounds/vomiting.mp3" volume="0.6"
+ 		 ng-audio-hover="sources/media/sounds/crack.mp3" volume-hover="0.4">DALEJ</button>
+	</div>
+
+	<div class="container kontener2" ng-show="k.validation">
+		<p>Witaj {{k.thyName}}</p>
+		<button class="btn btn-danger" ui-sref="poker"
+		  ng-audio="sources/media/sounds/scream.ogg" volume="0.2" 
+ 		  ng-audio-hover="sources/media/sounds/crack.mp3" volume-hover="0.4">
+		ZAPRASZAM DO GRY</button>
+	</div>
+
+</div>
+
+</div>
+
+
+
+<button id="ikonka1" ng-click="k.nuta(1);">
+<img ng-src="{{k.soundIcon}}" alt="muzyka/bezmuzy">
+</button>
+
+<button id="ikonka2" ng-click="k.nuta(2);">
+<img ng-src="{{k.soundShutUp}}" alt="w swiecie ciszy">
+</button>
+
+<div id="pointwaran" ng-show="k.pointwaran">
+waran...<img class="morespace" src="sources/media/icons/arrowr.png" alt="right">
+</div>
+
+<div id="pointsounds" ng-show="k.pointsounds">
+dźwięk...<img class="morespace" src="sources/media/icons/arrowr.png" alt="right">
+</div>
+
+<div id="pointnavi" ng-show="k.pointnavi">
+<img class="morespace" src="sources/media/icons/arrowu.png" alt="right">...nie ruszać...
+<img class="morespace" src="sources/media/icons/arrowu.png" alt="right">
+</div>
+
+

@@ -1,0 +1,47 @@
+body
+	{
+		font-family: 'Varela Round', sans-serif;
+		animation: ruch 300s linear infinite alternate;
+		background-image: url("../pics/fork.png"), url("../pics/dots.png");
+	}
+
+@keyframes ruch
+      {
+        0% {background-position:0 0, 0 0;}
+        100% {background-position:10000px 0, 7500px 0;}
+      }
+
+a
+	{
+		color: white;
+	}
+
+
+#header
+	{ 
+		background-color: #3366ff;
+		opacity: 0.8;
+		border: 1px solid black;
+		border-radius: 20px;
+		box-shadow: 2px 2px 20px #003399;
+		margin: 20px auto 22px;
+		padding-top: 30px;
+		padding-bottom: 22px;
+		color: white;
+		font-size: 1.4em;
+	}
+
+#stopka
+	{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 1.3em;s
+		font-weight: bold;
+	}
+
+#domek
+	{
+		font-size: 1.2em;
+		font-weight: bold;
+		color: magenta;
+	}

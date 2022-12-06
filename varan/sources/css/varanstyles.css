@@ -1,0 +1,323 @@
+body
+    {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .logo-img 
+	{
+        width: 70px;
+        height: 42px;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 4px;
+        margin-left: 2px;
+        margin-bottom: 4px; 
+        border: 2px solid black;
+        border-radius: 20px; 
+	}
+
+
+#navka
+	{
+        font-family: 'Kanit', sans-serif;
+        background-color: black;
+
+		color: white;
+		margin-top: 3px;
+		font-size: 16px;
+		box-shadow: 0 4px 8px 0 rgba(24, 23, 23, 0.2), 0 6px 20px 0 rgba(24, 23, 23, 0.19);
+	}
+
+.navibutton
+	{
+		text-align: center;
+        border: 1px solid black;
+		border-radius: 10px;
+		margin: 6px;
+		margin-top: 12px;
+	}
+
+.nav>li>a 
+	{
+		color: rgb(45, 48, 49);
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+.navbar-default .navbar-nav>li>a
+	{
+		color: rgb(45, 48, 49);
+	}
+
+
+
+.navibutton:hover 
+	{
+			box-shadow: 2px 2px 20px rgba( 244, 248, 248, 0.4);
+	}
+
+.navbar-default .navbar-nav>li>a:hover
+	{
+		color: rgb(221, 225, 226);
+	}
+
+
+.navbar-default .navbar-toggle:hover
+	{
+		background-color: rgb(26, 26, 27);
+		box-shadow: 2px 2px 20px rgba( 244,248, 248 ,0.4);
+	}
+
+.logo-img:hover
+	{
+		box-shadow: 2px 2px 20px rgba(244, 248, 248, 0.4);
+	}
+
+#chunk-content
+	{
+		margin-top: 120px;
+	}
+
+.fit-in-viewport
+	{
+		margin-top: 50px;
+	}
+
+.logo-text
+	{
+		color: rgb(3, 0, 0);
+		padding-top: 10px;
+		font-family: 'Black Ops One', cursive;
+		font-size: 55px;
+	}
+
+.logo-text-small
+	{
+		color: rgb(17, 64, 107);
+		font-family: 'Annie Use Your Telescope', cursive;
+		font-size: 28px;
+	}
+
+.fotopad
+	{
+		padding: 1px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+		margin-right: 15px;
+        -webkit-transition: all 2000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		transition:         all 2000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);	
+		box-shadow: 4px 6px 14px rgba(55, 55, 56, 0.4);
+	}
+
+.fotopad.ng-hide
+	{
+		width: 5px;
+		height: 5px;
+		opacity: 0.1;
+		margin-right: 200px;
+	}
+
+.tekstpad
+	{
+		position: relative;
+		border-radius: 10px;
+	}
+
+.kontener2
+	{
+        -webkit-transition:all linear 2s;
+        transition:all linear 2s;	
+	}
+
+.kontener2.ng-hide
+	{
+		opacity: 0;
+	}
+
+.kontener3
+	{
+        -webkit-transition:all linear 1s;
+		transition:all linear 1s;
+		margin-bottom: 10px;	
+	}
+
+.kontener3.ng-hide
+	{
+		opacity: 0;
+	}
+
+.kontener4
+	{
+        -webkit-transition:all linear 1s;
+		transition:all linear 1s;	
+	}
+
+.kontener4.ng-hide
+	{
+		opacity: 0;
+	}
+
+.kontener5
+	{
+		margin-bottom: 10px;
+		margin-top: 10px;
+        -webkit-transition:all linear 1s;
+		transition:all linear 1s;	
+	}
+
+.kontener5.ng-hide
+	{
+		opacity: 0;
+	}
+
+.centruj
+	{
+		text-align: center;
+	}
+
+.centruj-title
+	{
+		font-family: 'Black Ops One', cursive;
+		font-size: 20px;
+		color: rgb(217, 224, 230);
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+
+.mehaalomahn
+	{
+		color: white;
+		background-color : rgba(0, 0, 0, 0.85);
+		text-shadow: 1px 1px rgb(112, 128, 143);
+		font-size: 12px;
+		box-shadow: 4px 6px 14px rgba(55, 55, 56, 0.4);
+        -webkit-transition: all 2000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition:         all 2000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);	
+	}
+
+.mehaalomahn.ng-hide
+	{
+		color: black;
+	}
+
+.black-mamba
+	{
+		background-color : rgba(0, 0, 0, 0.85);
+		opacity : 0.7;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		padding-left: 11px;
+		padding-right: 11px;
+		border-radius: 13px;
+        -webkit-transition: all 2000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition:         all 2000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);	
+	}
+
+
+
+.black-mamba.ng-hide
+	{
+		opacity: 0;
+	}
+
+.career-choose
+	{
+		background-color : rgba(255, 255, 255, 0.85);
+		opacity : 0.7;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		padding-left: 11px;
+		padding-right: 11px;
+		border-radius: 13px;
+        -webkit-transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition:         all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);	
+	}
+
+
+
+.career-choose.ng-hide
+	{
+		opacity: 0;
+	}
+
+.myButton
+	{
+        font-family: 'Kanit', sans-serif;
+		font-size: 13px;
+		color: white;
+		background-color: black;
+		border: 2px solid black;
+		border-radius: 10px;
+		padding: 5px 12px;
+		margin-bottom: 10px;
+		width: 88%;
+		-webkit-transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition:         all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+.myButton:hover 
+	{
+		background-color: white;
+		color: black;
+		box-shadow: 1px 1px 5px black;
+
+	}
+
+.myButton.fotopad.ng-hide
+	{
+		opacity: 0;
+	}
+
+.penelope
+	{
+		margin-right: 15px;
+		margin-left: 10px;
+		margin-bottom: 15px;
+		padding: 10px;
+		background-color: rgba(172, 207, 191, 0.7);
+		color: black;
+		font-family: 'Kanit', sans-serif;
+		font-size: 16px;
+		border: 2px solid white;
+		border-radius: 10px;
+		box-shadow: 1px 2px 5px white;
+	}
+
+.noMargins
+	{
+		margin: 1px;
+	}
+
+.floatleft
+	{
+		float: left;
+		margin-bottom: 8px;
+		margin-right: 7px;
+	}
+
+.myButton1
+	{
+        font-family: 'Kanit', sans-serif;
+		font-size: 13px;
+		color: white;
+		background-color: black;
+		border: 2px solid black;
+		border-radius: 10px;
+		padding: 5px 12px;
+		margin-top: 7px;
+		width: 100px;
+		-webkit-transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition:         all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+.myButton1:hover 
+	{
+		background-color: white;
+		color: black;
+		box-shadow: 1px 1px 5px black;
+
+	}

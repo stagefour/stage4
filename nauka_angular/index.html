@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="pierwszaAppka">
+	<head>
+	<meta charset="utf-8">
+	<script src="angular.min.js"></script>
+	<script src="skrypt.js"></script>
+	<title>Pierwsze uzycie AngularJS</title>
+	</head>
+
+<body>
+	<h1>AngularJS</h1>
+	<div ng-controller="kontroler1">
+		<input type="text" 
+		ng-model="imie"
+		ng-keyup="wyswietlWartosc();"
+		ng-blur="duzeLitery();">
+		Twoje imie to: {{imie}}<br>
+		Jego wartosc liczbowa to: {{wartosc}}
+		<div>
+			<button ng-click="krzyknij();">
+			NACISNIJ MNIE
+			</button><br>
+			{{krzyk}}
+		</div>
+	</div>
+</body>

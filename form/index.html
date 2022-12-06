@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application Form</title>
+
+    <!-- Bootstrap -->
+ 
+    <link rel="stylesheet" href="plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/style.css">
+
+   </head>
+
+<body>
+
+
+
+<div class="container" ng-app="Aplikacja" ng-controller="Kontroler as k">
+
+
+<div class="container">
+  <div class="row" style="margin-bottom:15px;">
+    <div class="col-md-12">
+
+
+
+      <div class="container" id="box" ng-if="k.firstpage">
+        <br>
+        <h3>FORMULARZ ZGŁOSZENIOWY</h3>
+        <hr>
+        <form class="form-horizontal" name="contactForm" novalidate>
+          <fieldset>
+            <!-- Form Name -->
+            <!-- Text input-->
+            <div class="row">
+            <div class="col-md-5">
+            <br>
+            <span>Szkoła:</span>
+            <div class="wpis">
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.school_name.$invalid && !contactForm.school_name.$pristine }">
+                <div>
+
+                  <input name="school_name" placeholder="Nazwa szkoły" ng-model="k.ContactDetails.name" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.school_name.$invalid && !contactForm.school_name.$pristine"
+                 src="stop-road-sign.png">
+                </div>
+
+              </div>
+            </div>
+
+            <div class="wpis">
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.school_patron.$invalid && !contactForm.school_patron.$pristine }">
+                <div>
+
+                  <input name="school_patron" placeholder="Patron" ng-model="k.ContactDetails.patron" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.school_patron.$invalid && !contactForm.school_patron.$pristine"
+                 src="stop-road-sign.png">
+
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Text input-->
+            <br>
+            <span>Adres:</span>
+            <div class="wpis">
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.school_zipcode.$invalid && !contactForm.school_zipcode.$pristine }">
+                <div>
+
+                  <input name="school_zipcode" placeholder="Kod pocztowy" ng-model="k.ContactDetails.zip" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.school_zipcode.$invalid && !contactForm.school_zipcode.$pristine"
+                 src="stop-road-sign.png">
+
+
+                </div>
+              </div>
+            </div>
+            <div class="wpis">
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.school_city.$invalid && !contactForm.school_city.$pristine }">
+                <div>
+
+                  <input name="school_city" placeholder="Miejscowość" ng-model="k.ContactDetails.city" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.school_city.$invalid && !contactForm.school_city.$pristine"
+                 src="stop-road-sign.png">
+
+
+                </div>
+              </div>
+            </div>
+            <div class="wpis">
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.school_street.$invalid && !contactForm.school_street.$pristine }">
+                <div>
+
+                  <input name="school_street" placeholder="Ulica i numer" ng-model="k.ContactDetails.street" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.school_street.$invalid && !contactForm.school_street.$pristine"
+                 src="stop-road-sign.png">
+
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-md-5">
+            <br>
+            <span>Osoba o przekonaniach satanistycznych odpowiedzialna za kontakty w sprawie badania oraz</span><br>
+            <span>adres e-mail osoby o przekonaniach satanistycznych i diabolicznych:</span>
+            <br>
+            <div>
+              <div class="col-md-12"  ng-class="{ 'has-error' : contactForm.contact_name.$invalid && !contactForm.contact_name.$pristine }">
+                <div>
+                  <input name="contact_name" ng-model="k.ContactDetails.contactPerson" placeholder="Imię i nazwisko" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.contact_name.$invalid && !contactForm.contact_name.$pristine"
+                 src="stop-road-sign.png">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine }">
+                <div>
+                  <input name="email" placeholder="E-Mail" ng-model="k.ContactDetails.main_email" class="form-control" type="text"
+                   ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" required>
+                <img class="wrongly" ng-show="contactForm.email.$invalid && !contactForm.email.$pristine"
+                 src="stop-road-sign.png">
+
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <span>Koordynator szkolny badania - osoba odpowiedzialna za przygotowanie</span><br>
+            <span>sali, komputerów itp.:</span>
+            <br>
+            <div>
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.coordinator.$invalid && !contactForm.coordinator.$pristine }">
+                <div>
+                  <input name="coordinator" ng-model="k.ContactDetails.coordinator" placeholder="Imię i nazwisko" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.coordinator.$invalid && !contactForm.coordinator.$pristine"
+                 src="stop-road-sign.png">
+
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.coordinator_phone.$invalid && !contactForm.coordinator_phone.$pristine }">
+                <div>
+                  <input name="coordinator_phone" ng-model="k.ContactDetails.coordinator_phone" placeholder="bezp. nr telefonu" class="form-control" type="text" required>
+                <img class="wrongly" ng-show="contactForm.coordinator_phone.$invalid && !contactForm.coordinator_phone.$pristine"
+                 src="stop-road-sign.png">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="col-md-12" ng-class="{ 'has-error' : contactForm.coordinator_email.$invalid && !contactForm.coordinator_email.$pristine }">
+                <div>
+                  <input name="coordinator_email" placeholder="E-Mail" ng-model="k.ContactDetails.coordinator_email" class="form-control" type="text"
+                   ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" required>
+                <img class="wrongly" ng-show="contactForm.coordinator_email.$invalid && !contactForm.coordinator_email.$pristine"
+                 src="stop-road-sign.png">
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12">
+                <button class="btn btn-warning pull-right"
+                ng-disabled="contactForm.$invalid" ng-click="k.flippage();">Następna strona</button>
+
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+
+
+      <div class="container" id="box" ng-if="k.secondpage">
+        <br>
+        <h3>dane dotyczące klas i sal komputerowych</h3>
+        <hr>
+        <form class="form-horizontal" name="contactForm" novalidate>
+          <fieldset>
+        <div class="row">
+        <div class="col-md-5">
+          <div ng-repeat="klasa in k.klasy track by $index">
+            <div><span>klasa nr {{ $index + 1 }}</span>
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <input ng-model="k.ContactDetails.classes[$index].classname" placeholder="oznaczenie klasy" class="form-control" type="text" required>
+                </div>
+            </div>
+                <div class="col-md-4 col-md-4-offset-1" ng-class="{ 'has-error' : contactForm.iloscu{{$index}}.$invalid && !contactForm.iloscu{{$index}}.$pristine }">
+                    <div>
+                  <input ng-model="k.ContactDetails.classes[$index].qty" placeholder="il.uczniów" class="form-control"
+                  ng-pattern="/^[0-9]+$/" type="number" name="iloscu{{$index}}" required>
+                <img class="wrongly" ng-show="contactForm.iloscu{{$index}}.$invalid && !contactForm.iloscu{{$index}}.$pristine"
+                 src="stop-road-sign.png">
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>        <button class="btn btn-info btn-xs" ng-click="k.dodajklase();">dodaj klasę</button>
+                 <button class="btn btn-info btn-xs" ng-click="k.usunklase();">usuń klasę</button>
+        <hr>
+        <br>
+        </div>
+
+        <div class="col-md-5">
+        <div ng-repeat="sala in k.salekomputerowe track by $index">
+           <div><span>sala komputerowa nr {{ $index + 1 }}</span>
+              <div class="row">
+                <div class="col-md-6">
+                <div>
+                  <input ng-model="k.ContactDetails.computers[$index].roomname" placeholder="oznaczenie sali" class="form-control" type="text" required>
+                </div>
+                </div>
+                <div class="col-md-4 col-md-offset-1" ng-class="{ 'has-error' : contactForm.ilosck{{$index}}.$invalid && !contactForm.ilosck{{$index}}.$pristine }">
+                    <div>
+                  <input ng-model="k.ContactDetails.computers[$index].qty" placeholder="il.komputerów" class="form-control"
+                  ng-pattern="/^[0-9]+$/" type="number" name="ilosck{{$index}}" required>
+                <img class="wrongly" ng-show="contactForm.ilosck{{$index}}.$invalid && !contactForm.ilosck{{$index}}.$pristine"
+                 src="stop-road-sign.png">
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>          <button class="btn btn-info btn-xs" ng-click="k.dodajsale();">dodaj salę</button>
+         <button class="btn btn-info btn-xs" ng-click="k.usunsale();">usuń salę</button>
+        <hr>
+        </div>
+        <hr>
+        </div>
+            <span> czy odpowiada ci termin zasadniczy?</span>
+           <div class="form-group">
+              <div class="col-md-12">
+                <div class="input-group">
+                <input type="radio" value="yes" ng-model="k.ContactDetails.term" checked> TAK<br>
+                <input type="radio" value="no" ng-model="k.ContactDetails.term"> NIE<br>
+                </div>
+              </div>
+            </div>
+
+            <div ng-show="k.ContactDetails.term==='no'"> jeśli nie to napisz dlaczego:
+           <div>
+              <div class="col-md-9">
+                <div>
+                <input type="text" class="form-control" ng-model="k.ContactDetails.why">
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+
+            <div class="form-group">
+              <div class="col-md-12">
+                <button class="btn btn-warning pull-right"
+                ng-disabled="contactForm.$invalid" ng-click="k.sendIt();">Wyślij</button>
+
+              </div>
+            </div>
+
+
+
+          </fieldset>
+        </form>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="col-md-offset-1 col-md-6" ng-show="k.sent">
+<hr><br>
+<div ng-show="k.success">
+Dziękujemy za wysłanie formularza.<br>
+Link aktywacyjny zostanie przesłany na adres mailowy<br>
+{{ k.ContactDetails.main_email }}<br>
+Prosimy o aktywację rejestracji poprzez kliknięcie w ten link.<br>
+Dziękujemy.
+</div>
+<div ng-show="k.failed">
+Niestety wysłanie formularza nie powiodło się<br>
+Prosimy spróbować ponownie.<br>
+Dziękujemy.
+</div>
+<br>
+<hr>
+</div>
+
+
+
+</div>
+
+
+
+        <script src="plugins/jquery-3.1.1.min.js"></script>
+        <script src="plugins/bootstrap.min.js"></script>
+        <script src="plugins/angular.min.js"></script>
+        <script src="plugins/script.js"></script>
+
+</body>
+</html>
