@@ -1,0 +1,47 @@
+#header1 {
+    color: red;
+}
+
+.ramka {
+    text-align: center;
+    margin-top: 10px;
+    padding: 1px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.przycisk {
+    cursor: pointer;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 1em;
+}
+
+button:hover {
+    background-color: black;
+    color: magenta;
+}
+
+.left {
+    text-align: left;
+}
+
+#sub-heading {
+    color: gray;
+    text-align: center;
+}
+
+.secondary {
+    padding: 8px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 1em;
+}
