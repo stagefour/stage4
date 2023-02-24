@@ -63,7 +63,7 @@ function HomeController (ServiceEngine)
 			var k = this;
 			k.showLizard = false;
 
-			setTimeout(function(){ k.showLizard = true; }, 2010);
+			setTimeout(function(){ k.showLizard = true; }, 500);
 
         };
 
