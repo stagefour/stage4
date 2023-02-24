@@ -63,7 +63,7 @@ function HomeController (ServiceEngine)
 			var k = this;
 			k.showLizard = false;
 
-			setTimeout(function(){ k.showLizard = true; }, 200);
+			setTimeout(function(){ k.showLizard = true; }, 210);
 
         };
 
@@ -82,16 +82,16 @@ function CareerController (ServiceEngine)
 			{
 				if (p === 1) { k.education = false; k.certificates = false; k.languages = false;
 					setTimeout(function(){ k.work = true; 
-					}, 200); };
+					}, 210); };
 				if (p === 2) { k.work = false; k.certificates = false; k.languages = false;
 				setTimeout(function(){ k.education = true; 
-				}, 200); };
+				}, 210); };
 				if (p === 3) { k.work = false; k.education = false; k.languages = false;
 					setTimeout(function(){ k.certificates = true; 
-					}, 200); };
+					}, 210); };
 				if (p === 4) { k.work = false; k.certificates = false; k.education = false; 
 						setTimeout(function(){ k.languages = true; 
-					}, 200); };
+					}, 210); };
 
 
 
@@ -138,13 +138,13 @@ function PastimeController (ServiceEngine)
 			{
 			if (p === 1) { k.guitar = false; k.travel = false; k.theList = false; k.games = false;
 				setTimeout(function(){ k.games = true; k.gamesIntro = true; 
-				}, 200); };
+				}, 210); };
 			if (p === 2) { k.games = false; k.travel = false; k.guitarInspirations = false; k.guitar = false;
 			setTimeout(function(){ k.guitar = true; k.guitarIntro = true; 
-			}, 200); };
+			}, 210); };
 			if (p === 3) { k.games = false; k.guitar = false; k.travelInfo = false; k.travel = false;
 				setTimeout(function(){ k.travel = true; k.travelIntro = true;
-				}, 200); };
+				}, 210); };
 			};
 
 			k.ShowTheList = function ()
