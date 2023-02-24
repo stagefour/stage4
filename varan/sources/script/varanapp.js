@@ -63,7 +63,7 @@ function HomeController (ServiceEngine)
 			var k = this;
 			k.showLizard = false;
 
-			setTimeout(function(){ k.showLizard = true; }, 1000);
+			setTimeout(function(){ k.showLizard = true; }, 200);
 
         };
 
@@ -82,22 +82,22 @@ function CareerController (ServiceEngine)
 			{
 				if (p === 1) { k.education = false; k.certificates = false; k.languages = false;
 					setTimeout(function(){ k.work = true; 
-					}, 2010); };
+					}, 200); };
 				if (p === 2) { k.work = false; k.certificates = false; k.languages = false;
 				setTimeout(function(){ k.education = true; 
-				}, 2010); };
+				}, 200); };
 				if (p === 3) { k.work = false; k.education = false; k.languages = false;
 					setTimeout(function(){ k.certificates = true; 
-					}, 2010); };
+					}, 200); };
 				if (p === 4) { k.work = false; k.certificates = false; k.education = false; 
 						setTimeout(function(){ k.languages = true; 
-					}, 2010); };
+					}, 200); };
 
 
 
 			};
 
-			setTimeout(function(){ k.careerText = true; }, 1000);		
+			setTimeout(function(){ k.careerText = true; }, 100);		
         };
 
 LetterController.$inject = ['ServiceEngine'];
@@ -105,7 +105,7 @@ function LetterController (ServiceEngine)
         {
 			var k = this;
 			k.showTheLetter = false;
-			setTimeout(function(){ k.showTheLetter = true; }, 1000);
+			setTimeout(function(){ k.showTheLetter = true; }, 100);
 
         };
 
@@ -138,29 +138,29 @@ function PastimeController (ServiceEngine)
 			{
 			if (p === 1) { k.guitar = false; k.travel = false; k.theList = false; k.games = false;
 				setTimeout(function(){ k.games = true; k.gamesIntro = true; 
-				}, 2010); };
+				}, 200); };
 			if (p === 2) { k.games = false; k.travel = false; k.guitarInspirations = false; k.guitar = false;
 			setTimeout(function(){ k.guitar = true; k.guitarIntro = true; 
-			}, 2010); };
+			}, 200); };
 			if (p === 3) { k.games = false; k.guitar = false; k.travelInfo = false; k.travel = false;
 				setTimeout(function(){ k.travel = true; k.travelIntro = true;
-				}, 2010); };
+				}, 200); };
 			};
 
 			k.ShowTheList = function ()
 			{
 				k.gamesIntro = false;
-				setTimeout(function(){ k.theList = true; }, 1010);
+				setTimeout(function(){ k.theList = true; }, 100);
 			};
 
 			k.ShowInspirations = function ()
 			{
 				k.guitarIntro = false;
-				setTimeout(function(){ k.guitarInspirations = true; }, 1010);				
+				setTimeout(function(){ k.guitarInspirations = true; }, 100);				
 			};
 
 
-			setTimeout(function(){ k.interestsText = true; }, 1010);
+			setTimeout(function(){ k.interestsText = true; }, 100);
 
         };
 
@@ -171,8 +171,8 @@ function ContactController (ServiceEngine)
 			k.fotopad = false;
 			k.contactText = false;
 
-			setTimeout(function(){ k.fotopad = true; }, 1000);
-			setTimeout(function(){ k.contactText = true; }, 2500);
+			setTimeout(function(){ k.fotopad = true; }, 100);
+			setTimeout(function(){ k.contactText = true; }, 250);
         };
 
 ServiceEngine.$inject = ['ngAudio'];
