@@ -138,13 +138,13 @@ function PastimeController (ServiceEngine)
 			{
 			if (p === 1) { k.guitar = false; k.travel = false; k.theList = false; k.games = false;
 				setTimeout(function(){ k.games = true; k.gamesIntro = true; 
-				}, 2010); };
+				}, 300); };
 			if (p === 2) { k.games = false; k.travel = false; k.guitarInspirations = false; k.guitar = false;
 			setTimeout(function(){ k.guitar = true; k.guitarIntro = true; 
-			}, 2010); };
+			}, 300); };
 			if (p === 3) { k.games = false; k.guitar = false; k.travelInfo = false; k.travel = false;
 				setTimeout(function(){ k.travel = true; k.travelIntro = true;
-				}, 2010); };
+				}, 300); };
 			};
 
 			k.ShowTheList = function ()
