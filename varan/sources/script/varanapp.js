@@ -82,16 +82,16 @@ function CareerController (ServiceEngine)
 			{
 				if (p === 1) { k.education = false; k.certificates = false; k.languages = false;
 					setTimeout(function(){ k.work = true; 
-					}, 2010); };
+					}, 300); };
 				if (p === 2) { k.work = false; k.certificates = false; k.languages = false;
 				setTimeout(function(){ k.education = true; 
-				}, 2010); };
+				}, 300); };
 				if (p === 3) { k.work = false; k.education = false; k.languages = false;
 					setTimeout(function(){ k.certificates = true; 
-					}, 2010); };
+					}, 300); };
 				if (p === 4) { k.work = false; k.certificates = false; k.education = false; 
 						setTimeout(function(){ k.languages = true; 
-					}, 2010); };
+					}, 300); };
 
 
 
@@ -105,7 +105,7 @@ function LetterController (ServiceEngine)
         {
 			var k = this;
 			k.showTheLetter = false;
-			setTimeout(function(){ k.showTheLetter = true; }, 1000);
+			setTimeout(function(){ k.showTheLetter = true; }, 200);
 
         };
 
@@ -150,17 +150,17 @@ function PastimeController (ServiceEngine)
 			k.ShowTheList = function ()
 			{
 				k.gamesIntro = false;
-				setTimeout(function(){ k.theList = true; }, 1000);
+				setTimeout(function(){ k.theList = true; }, 200);
 			};
 
 			k.ShowInspirations = function ()
 			{
 				k.guitarIntro = false;
-				setTimeout(function(){ k.guitarInspirations = true; }, 1000);				
+				setTimeout(function(){ k.guitarInspirations = true; }, 200);				
 			};
 
 
-			setTimeout(function(){ k.interestsText = true; }, 1000);
+			setTimeout(function(){ k.interestsText = true; }, 200);
 
         };
 
