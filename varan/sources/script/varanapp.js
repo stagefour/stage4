@@ -63,7 +63,7 @@ function HomeController (ServiceEngine)
 			var k = this;
 			k.showLizard = false;
 
-			setTimeout(function(){ k.showLizard = true; }, 500);
+			setTimeout(function(){ k.showLizard = true; }, 200);
 
         };
 
@@ -97,7 +97,7 @@ function CareerController (ServiceEngine)
 
 			};
 
-			setTimeout(function(){ k.careerText = true; }, 1000);		
+			setTimeout(function(){ k.careerText = true; }, 500);		
         };
 
 LetterController.$inject = ['ServiceEngine'];
