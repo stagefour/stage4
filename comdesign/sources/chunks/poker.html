@@ -1,0 +1,173 @@
+<div class="container-fluid text-center naszolapie" id="chunk-content2" ng-show="k.brutality">
+
+
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-11 pokerpad">
+	<div class="pokerphoto wprawo">
+	<img class="fotosista img-rounded img-responsive" ng-src="{{k.dieseLeute.head}}" alt="headjob">
+		<ul class="thelystright">
+		<li class="podkosteczke" ng-repeat="karta in k.playercards track by $index">
+		<img ng-src="{{k.dice[karta-1]}}" alt="kolor">
+		</li>
+	</ul>
+	</div>
+	<div>
+
+	</div>
+	<div class="pokertext text-left wprawo">
+	Gracz : {{ k.dieseLeute.name }}<br>
+	waluta : {{ k.playermoney }}$<br>
+	</div>
+	</div>
+
+
+	<div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-11 pokerpad">
+	<div class="pokerphoto wlewo" ng-show="k.photojoker">
+	<img class="fotosista img-rounded img-responsive" ng-src="{{k.AlbertynaPicture}}" alt="ona">
+		<ul class="thelystleft">
+		<li class="podkosteczke" ng-repeat="karta in k.mycards track by $index">
+		<img ng-src="{{k.dice[karta-1]}}" alt="kolor" ng-if="!k.noLooking">
+		<img src="sources/media/icons/blinddice.png" alt="slepak" ng-if="k.noLooking">
+		</li>
+	</ul>
+	</div>
+	<div class="pokertext text-right wlewo">
+	Gracz : Albertyna<br>
+	waluta : {{ k.mymoney }}$<br>
+	</div>	
+	</div>
+</div>
+
+<div class="row">
+<div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+	<div class="greentable">
+	Pula na stole: {{ k.moneypile }}$<br>
+	<hr>
+	Stawka minimalna: {{ k. bid }}$<br>
+	Runda: {{ k.round }}/5<br>
+	</div>
+</div>
+
+
+
+<div class="rozdaj col-md-4 col-md-offset-1 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1" ng-show="k.shufflebutton">
+	<button type="button" class="btn btn-block pokerbuttons"
+	 ng-audio="sources/media/sounds/dice.wav" volume="0.9"
+	 ng-audio-hover="sources/media/sounds/crack.mp3" volume-hover="0.4"
+	 ng-click="k.shuffle();">RZUĆ KOSTKI!</button>
+</div>
+
+
+<div class="rozdaj col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2" ng-show="k.playbuttons">
+	<button type="button" class="btn btn-block pokerbuttons"
+	 ng-audio="sources/media/sounds/checked.wav" volume="0.6"
+	 ng-audio-hover="sources/media/sounds/crack.mp3" volume-hover="0.3"
+	 ng-click="k.check(0);">{{ k.buttonText }}</button>
+</div>	
+
+<div class="rozdaj col-md-3 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-8 col-xs-offset-2" ng-show="k.playbuttons">
+	<button type="button" class="btn btn-block pokerbuttons"
+	 ng-audio="sources/media/sounds/pass.wav" volume="0.9"
+	 ng-audio-hover="sources/media/sounds/crack.mp3" volume-hover="0.4"
+	 ng-click="k.pass();">Pasuję!</button>
+</div>
+
+
+
+<div class="rozdaj col-md-4 col-md-offset-1 col-sm-5 col-xs-12" ng-show="k.playbuttons && k.round<5">
+	<button type="button" class="btn btn-block pokerbuttons"
+	 ng-audio="sources/media/sounds/coins.wav" volume="0.5"
+	 ng-audio-hover="sources/media/sounds/crack.mp3" volume-hover="0.3"
+	 ng-click="k.raise();">Podbijam!</button>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container-fluid text-center naszolapie" id="chunk-content" ng-show="k.winningScreen">
+
+<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 pokerpad">
+			<div class="pokerwinningphoto">
+					<img class="fotosista img-rounded img-responsive" ng-src="{{k.AlbertynaPicture}}" alt="ona">
+			</div>
+			<div class="pokertext">
+				{{ k.whatIdo }}<br><br>
+				Bardzo proszę, skontaktuj się ze mną mailem, telefonicznie,<br>
+				bądź przez formularz w dziale "Kontakt" w celu omówienia szczegółów.<br>
+				{{ k.dieseLeute.name }}! Dziękuję Ci za grę!<br>
+			</div>
+		</div>
+</div>
+
+
+	<button type="button" class="buritos pokerbuttons btn btn-block"
+	 ng-audio="sources/media/sounds/loop.wav" volume="0.5"
+	 ng-audio-hover="sources/media/sounds/crack.mp3" volume-hover="0.4"
+	 ng-click="k.yuppi();">Wracamy !!!</button>
+
+</div>
+
+	<div class="chalkboard2" ng-show="k.points">
+	{{ k.duplexpua }} - Albertyna</div>
+
+
+	<div class="chalkboard" ng-show="k.points">
+	{{ k.tuapua }} - {{ k.dieseLeute.name }}</div>
+
+
+
+<div class="whatSheThinks" ng-hide="k.AlbertynaIdle">
+{{ k.whatIdo }}
+</div>
+
+<div class="lemmechangeDice shadowyHood" ng-show="k.swapemDice">
+	<div>
+	Ile kostek wymieniasz? Możesz wymienić najsłabsze, najwyżej
+	trzy, wymiana każdej kosztuje {{ k.bid }}$
+	</div>
+	<hr>
+	<div>
+ <button type="button" class="btn btn-primary btn-sm guzik" ng-click="k.changeDice(0)"
+    ng-audio-hover="sources/media/sounds/bzzz.mp3" volume-hover="0.3"
+	ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.8">żadnej</button>
+ <button type="button" class="btn btn-primary btn-sm guzik" ng-click="k.changeDice(1)"
+    ng-audio-hover="sources/media/sounds/bzzz.mp3" volume-hover="0.3"
+	ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.8">jedną</button>
+ <button type="button" class="btn btn-primary btn-sm guzik" ng-click="k.changeDice(2)"
+    ng-audio-hover="sources/media/sounds/bzzz.mp3" volume-hover="0.3"
+	ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.8">dwie</button>
+ <button type="button" class="btn btn-primary btn-sm guzik" ng-click="k.changeDice(3)"
+    ng-audio-hover="sources/media/sounds/bzzz.mp3" volume-hover="0.3"
+	ng-audio="sources/media/sounds/rocker-switch.wav" volume="0.8">trzy</button>
+ 	</div>
+ <hr>
+ </div>
+ 
+
+<div class="theWinnerIs" ng-show="k.showWinner">
+{{ k.winner }} 
+<p ng-show="k.winner==='REMIS!'"><br>pula przechodzi do następnej partii</p>
+</div>
+
+
+<button id="ikonka1" ng-click="k.nuta(1);">
+<img ng-src="{{k.soundIcon}}" alt="muzyka/bezmuzy">
+</button>
+
+<button id="ikonka2" ng-click="k.nuta(2);">
+<img ng-src="{{k.soundShutUp}}" alt="w swiecie ciszy">
+</button>
+
+
